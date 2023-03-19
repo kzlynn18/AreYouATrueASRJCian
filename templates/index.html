@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Are you a true ASRJCians?</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+<style>
+body {
+  background-image: url('https://asrjc.moe.edu.sg/wp-content/uploads/2022/10/FAThumbnail-scaled.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+  <div class="quiz-container" id="quiz">
+    <h1 class="title">Are you a true ASRJCians?</h1>
+    <div class="question-container">
+      <div class="question" id="question"></div>
+      <div class="choices" id="choices"></div>
+      <button class="submit-btn" id="submit-answer">Submit</button>
+    </div>
+  </div>
+  <div class="result-container hide" id="result">
+    <h1 class="title">Quiz Result</h1>
+    <div class="score" id="score"></div>
+  </div>
+  <button class="start-btn" id="start-quiz">Start Quiz</button>
+  <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
